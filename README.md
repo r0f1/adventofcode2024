@@ -8,4 +8,4 @@ My solutions from previous years: [2020](https://github.com/r0f1/adventofcode202
 
 
 ## Resources
-* [Python Tricks](https://www.reddit.com/r/adventofcode/comments/1gsl4fm/share_your_favorite_tricks_and_snippets/)
+* [Python Tricks](https://www.reddit.com/r/adventofcode/comments/1gsl4fm/share_your_favorite_tricks_and_snippets/) - Reddit thread from Python community.
