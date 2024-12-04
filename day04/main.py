@@ -33,11 +33,12 @@ def find_part2(arr):
     # . A .     . A .     . A .     . A .
     # M . S     S . M     S . S     M . M
     if arr[4] == 3:
-        pos1 = arr[0] == 2 and arr[2] == 4 and arr[6] == 2 and arr[8] == 4
-        pos2 = arr[0] == 4 and arr[2] == 2 and arr[6] == 4 and arr[8] == 2
-        pos3 = arr[0] == 2 and arr[2] == 2 and arr[6] == 4 and arr[8] == 4
-        pos4 = arr[0] == 4 and arr[2] == 4 and arr[6] == 2 and arr[8] == 2
-        return pos1 or pos2 or pos3 or pos4
+        return any([
+            arr[0] == 2 and arr[2] == 4 and arr[6] == 2 and arr[8] == 4,
+            arr[0] == 4 and arr[2] == 2 and arr[6] == 4 and arr[8] == 2,
+            arr[0] == 2 and arr[2] == 2 and arr[6] == 4 and arr[8] == 4,
+            arr[0] == 4 and arr[2] == 4 and arr[6] == 2 and arr[8] == 2,
+        ])
     return 0 
 
 res = generic_filter(img, find_part2, size=3, mode="constant", cval=0)
