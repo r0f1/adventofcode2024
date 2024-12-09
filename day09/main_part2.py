@@ -14,9 +14,9 @@ for i, r in enumerate(disk_code):
     counter += r
 
 # Observation:
-#   We never move files from right to left.
-#   Therefore, when moving a file, we do not care about the gap that file leaves at its source location.
-#   Therefore, we do not track these gaps.
+#   We never move files from left to right.
+#   Therefore, when moving a file, I do not care about the gap that file leaves at its source location.
+#   Therefore, I do not track these gaps.
 
 # Two pointers: 
 #   One that is tracking the file index and moves from the highest file index to 0.
